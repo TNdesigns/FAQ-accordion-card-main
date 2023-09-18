@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(180deg, hsl(273, 75%, 66%)25%, hsl(240, 73%, 65%)65%);
+    background-repeat:no-repeat;
+    height:900px;
+}   
+.faq-bx{
+    display: flex;
+    height: 510px;
+    width: 920px;
+    background-color: white;
+    position: relative;
+    top:0px;
+    left:260px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.svg1{
+    position: absolute;
+    top: -300px;
+    left: -600px;
+    height: 945px;
+    width: 966px;
+}
+.svg2{
+    position: absolute;
+    top: 75px;
+    left: -80px;
+    height:359px ;
+    width: 472px;   
+}
+.svg{
+    position: relative;
+    top: 399px;
+    left: 130px;
+    height: 184px;
+    width: 191px;
+    z-index: 1;
+}
+h1{
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: "kumbh Sans";
+    font-size: 30px;
+}
+label[for="q1"],
+label[for="q2"],
+label[for="q3"],
+label[for="q4"],
+label[for="q5"]{
+    font-size: 15px;
+}
+
+label[for="q1"]:hover,
+label[for="q2"]:hover,
+label[for="q3"]:hover,
+label[for="q4"]:hover,
+label[for="q5"]:hover{
+    cursor: pointer;
+    color:hsl(14, 88%, 65%);
+}
+ul{
+    /*display: block;*/
+}
+label{
+    color: black;
+}
+li{
+    position: relative;
+    top: 130px;
+    left: 500px;
+    list-style-type: none;
+    font-family: "kumbh Sans";
+    margin-bottom: 20px;
+}
+.answr1{
+    position: relative;
+    top: 10px;
+    margin-right: 550px;
+    font-size: 13px;
+    opacity: 0;
+}
+#acrdn1 input[type="radio"]:checked + label ~ .answr1{
+    opacity: 1;
+    margin-bottom: 45px;
+
+}
+.line1{
+    border-bottom: 1px solid black;
+    position: relative;
+    top: -15px;
+    width:375px;
+}
+#acrdn2{
+    position: relative;
+    top: 110px;
+}
+.answr2{
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    margin-right: 560px;
+    opacity: 0;
+}
+.line2{
+    border-bottom: 1px solid black;
+    position: relative;
+    top: -15px;
+    width: 375px;
+}
+#acrdn2 input[type="radio"]:checked + label ~ .answr2{
+    opacity: 1;
+    margin-bottom: 45px;
+}
+#acrdn3{
+    position: relative;
+    top: 90px;
+}
+.answr3{
+    position: relative;
+    top:10px;
+    margin-right:550px;
+    font-size: 13px;
+    opacity: 0;
+}
+.line3{
+    border-bottom: 1px solid black;
+    width: 375px;
+    position: relative;
+    top: -35px;
+}
+#acrdn3 input[type="radio"]:checked + label ~ .answr3{
+    opacity: 1;
+    margin-bottom: 60px;
+}
+#acrdn4{
+    position: relative;
+    top: 50px;
+}
+.answr4{
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    margin-right: 550px;
+    opacity: 0;
+}
+.line4{
+    border-bottom: 1px solid black;
+    width: 375px;
+    position: relative;
+    top: -20px;
+}
+#acrdn4 input[type="radio"]:checked + label ~ .answr4{
+    opacity: 1;
+    margin-bottom: 45px;
+}
+#acrdn5{
+    position: relative;
+    top: 25px;
+}
+.answr5{
+    position: relative;
+    top: 10px;
+    font-size: 13px;
+    margin-right: 560px;
+    opacity: 0;
+}
+.line5{
+    border-bottom: 1px solid black;
+    width: 375px;
+    position: relative;
+    top: -15px;
+}
+#acrdn5 input[type="radio"]:checked + label ~ .answr5{
+    opacity: 1;
+    margin-bottom: 40px;
+}
+input[type="radio"]{
+    appearance: none;
+}
+input[type="radio"]::before{
+    content: "\2304";
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    left: 340px;
+}
+label[for="q1"],
+label[for="q2"],
+label[for="q3"],
+label[for="q4"],
+label[for="q5"]{
+    position: relative;
+    left: -15px;
+}
+input[type="radio"]:hover{
+    color:hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+#acrdn1 input[type="radio"]:checked + label,
+#acrdn2 input[type="radio"]:checked + label,
+#acrdn3 input[type="radio"]:checked + label,
+#acrdn4 input[type="radio"]:checked + label,
+#acrdn5 input[type="radio"]:checked + label{
+    font-weight: 600;
+}
+.answr1,
+.answr2,
+.answr3,
+.answr4,
+.answr5{
+    color:hsl(240, 2%, 66%);
+}
+@media screen and (max-width:420px){
+    html,body{
+        overflow-x:hidden;
+    }
+    .faq-bx{
+        position: relative;
+        top: -120vw;
+        left: 5vw;
+        height:70vh; 
+        width:90vw;
+    }
+    .svg,.svg1,.svg2{
+        visibility: hidden;
+    }
+    .mbl-img1{
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 60vw;
+        width: 60vw;
+        position: relative;
+        top: 46vw;
+        left: 20vw;
+        z-index: 1;
+    }
+    .mbl-img2{
+        background-image: url(images/illustration-woman-online-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 60vw;
+        width: 60vw;
+        z-index: 1;
+        position: relative;
+        top: -42vw;
+        left: 20vw;
+    }
+    h1{
+        position: relative;
+        top: 35vw;
+        left: 37vw;
+        font-size: 10vw;
+    }
+    label[for="q1"],
+    label[for="q2"],
+    label[for="q3"],
+    label[for="q4"],
+    label[for="q5"]{
+        font-size: 3.9vw;
+    }
+    #acrdn1{
+        position: relative;
+        top: 55vw;
+        left: -15vw;
+    }
+    .answr1{
+        margin-right: 135vw;
+    }
+    .line1{
+        width:75vw;
+        position: relative;
+        top: -6vw;
+    }
+    input[type="radio"]::before{
+        position: relative;
+        left: 70vw;
+    }
+    #acrdn2{
+        position: relative;
+        top: 49vw;
+        left: -15vw;
+    }
+    .answr2{
+        margin-right: 140vw;
+    }
+    .line2{
+        width: 75vw;
+        position: relative;
+        top: -2vw;
+    }
+    #acrdn3{
+        position: relative;
+        top: 47vw;
+        left: -15vw;
+    }
+    .answr3{
+        margin-right: 140vw;
+    }
+    .line3{
+        width: 75vw;
+        position: relative;
+        top: -5vw;
+    }
+    #acrdn4{
+        position: relative;
+        top: 42vw;
+        left: -15vw;
+    }
+    .answr4{
+        margin-right: 135vw;
+        
+    }
+    .line4{
+        width: 75vw;
+        position: relative;
+        top: -1vw;
+    }
+    #acrdn5{
+        position: relative;
+        top: 42vw;
+        left: -15vw;
+    }
+    .answr5{
+        width: 70vw;
+        
+    }
+    .line5{
+        width: 75vw;
+        position: relative;
+        top:0vw;
+    }
+}
