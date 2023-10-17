@@ -6,15 +6,19 @@ body{
     background: linear-gradient(180deg, hsl(273, 75%, 66%)25%, hsl(240, 73%, 65%)65%);
     background-repeat:no-repeat;
     height:900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }   
 .faq-bx{
     display: flex;
+    
     height: 510px;
     width: 920px;
     background-color: white;
     position: relative;
     top:0px;
-    left:260px;
+    left:-70px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -34,8 +38,8 @@ body{
 }
 .svg{
     position: relative;
-    top: 399px;
-    left: 130px;
+    top: 39px;
+    left: 10px;
     height: 184px;
     width: 191px;
     z-index: 1;
@@ -63,9 +67,7 @@ label[for="q5"]:hover{
     cursor: pointer;
     color:hsl(14, 88%, 65%);
 }
-ul{
-    /*display: block;*/
-}
+
 label{
     color: black;
 }
